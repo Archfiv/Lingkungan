@@ -16,7 +16,7 @@
       } */
       .about-section {
         padding: 50px;
-        background-color: #f7f7f7;
+        background-color: rgb(95, 235, 97, 0.2);
       }
       .footer {
         background-color: #333;
@@ -24,11 +24,20 @@
         padding: 20px 0;
         text-align: center;
       }
+
+      #join {
+        padding-top: 50px;
+        padding-bottom: 75px;
+      }
+
+      .card {
+        background-color: rgb(255, 255, 255, 0.7);
+      }
     </style>
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success fixed-top">
       <div class="container">
         <a class="navbar-brand" href="#">Lingkungan Bersih</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,52 +52,108 @@
               <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact">Contact</a>
+              <a class="nav-link" href="#join">Join</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
-
-    <!-- carousel slide -->
-   
+    <!-- Navbar End -->
 
     <!-- Jumbotron -->
-    <section id="home" class="jumbotron" style="background-image: url('alam.png'); background-size: cover; background-position: center; height: 750px;">
-      <div class="container text-white text-center" style="padding-top: 250px;">
-          <h1 class="display-4  fw-bold">Selamat Datang Di Di Website Kami</h1>
-          <h3 fw-bold>Mari Ciptakan Lingkungan <span class="text-success bg-white p-2 fw-bold" style="--bs-bg-opacity: .5;"> YANG BERSIH .</span></h3>
-          <button class="btn btn-success fw-bold p-3 m-3 w-10">Bergabung Segera</button>
+    <section id="home" class="jumbotron" style="background-image: url('alam.png'); background-size: cover; background-position: center; height: 750px">
+      <div class="container text-white text-center" style="padding-top: 250px">
+        <h1 class="display-4 fw-bold">Selamat Datang Di Website Kami</h1>
+        <h3 fw-bold>Mari Ciptakan Lingkungan <span class="fw-bold"> Yang Bersih .</span></h3>
+        <a class="btn btn-success fw-bold p-3 m-3 w-10" href="#join">Bergabung Segera</a>
       </div>
-  </section>
+    </section>
+    <!-- Jumbotron End -->
 
     <!-- About Section -->
     <section class="about-section" id="about">
       <div class="container">
-        <h2 class="text-center">Tentang Kami</h2>
-        <p class="text-center">
-          Kami adalah organisasi non-profit yang berdedikasi untuk menjaga lingkungan dan mendorong masyarakat untuk peduli terhadap bumi kita. Dengan berbagai kegiatan seperti penghijauan, pembersihan lingkungan, dan kampanye kesadaran
-          lingkungan, kami berharap bisa menciptakan dunia yang lebih bersih dan hijau.
-        </p>
-        <div class="row">
-          <div class="col-md-4">
-            <h3>Visi</h3>
-            <p>Menciptakan lingkungan yang bersih dan lestari untuk generasi mendatang.</p>
+        <div class="row text-center">
+          <div class="col">
+            <h2 class="text-center">Tentang Kami</h2>
+            <p class="text-center">
+              Kami adalah organisasi non-profit yang berdedikasi untuk menjaga lingkungan dan mendorong masyarakat untuk peduli terhadap bumi kita. Dengan berbagai kegiatan seperti penghijauan, pembersihan lingkungan, dan kampanye kesadaran
+              lingkungan, kami berharap bisa menciptakan dunia yang lebih bersih dan hijau.
+            </p>
           </div>
-          <div class="col-md-4">
-            <h3>Misi</h3>
-            <p>Mengedukasi masyarakat tentang pentingnya menjaga kebersihan dan melindungi alam.</p>
+        </div>
+        <div class="row text-center fw-bold" style="padding-top: 45px">
+          <div class="col" style="padding-bottom: 12px">
+            <h3>Visi & Misi</h3>
           </div>
-          <div class="col-md-4">
-            <h3>Kegiatan Kami</h3>
-            <p>Program penanaman pohon, daur ulang, dan aksi bersih-bersih bersama.</p>
+        </div>
+        <div class="row justify-content-center text-center">
+          <div class="col col-md-4">
+            <div class="card">
+              <img src="Bersih 1.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Menciptakan lingkungan yang bersih dan lestari untuk generasi mendatang. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ullam blanditiis nesciunt vero enim delectus, itaque ex modi est minus? Obcaecati alias
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4">
+            <div class="card">
+              <img src="Bersih 2.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Mengedukasi masyarakat tentang pentingnya menjaga kebersihan dan melindungi alam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt fuga ea, quidem similique totam odio ex adipisci cumque veritatis, omnis
+                  explicabo, aliquam quisquam sit repudiandae.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col col-md-4">
+            <div class="card">
+              <img src="Bersih 3.jpg" class="card-img-top" alt="..." />
+              <div class="card-body">
+                <p class="card-text">
+                  Program penanaman pohon, daur ulang, dan aksi bersih-bersih bersama. Lorem ipsum dolor sit amet consectetur adipisicing elit. Aut dicta repellendus repudiandae voluptates explicabo deserunt architecto iure a est quas iste
+                  soluta accusantium, placeat dolorem.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- About Section End -->
+
+    <!-- Contact -->
+    <section id="join">
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <h2>Join Us</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <form>
+              <div class="mb-3">
+                <label for="exampleInputEmail1" class="form-label">Nama</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" />
+              </div>
+              <div class="mb-3">
+                <label for="exampleInputPassword1" class="form-label">Email</label>
+                <input type="password" class="form-control" id="exampleInputPassword1" />
+              </div>
+              <button type="submit" class="btn btn-primary">Kirim</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Contact End -->
 
     <!-- Footer -->
-    <footer class="footer" id="contact">
+    <footer class="footer">
       <div class="container">
         <p>&copy; 2024 Lingkungan Bersih. All rights reserved.</p>
         <p>Contact us: <a href="mailto:info@lingkunganbersih.org" class="text-white">info@lingkunganbersih.org</a></p>
